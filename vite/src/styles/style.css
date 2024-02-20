@@ -1,0 +1,30 @@
+.container {
+  padding: 2rem;
+  margin: 0 auto;
+  position: relative;
+
+  & h2 {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    & span {
+      display: block;
+    }
+  }
+
+  & h2 span:nth-child(1) {
+    color: white;
+    background-color: black;
+    padding: 0.5rem;
+    white-space: nowrap;
+    margin-bottom: 1rem;
+  }
+
+  & h2 span:nth-child(2) {
+    color: #4ba060;
+    font-size: 2.5rem;
+  }
+}
